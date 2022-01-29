@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F9FAFF;
+    /* height: 4000px; */
+    color: black;
+}
+
+/*---------Main Style------------*/
+a{
+    text-decoration: none;
+}
+
+.shadow{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-weight:lighter;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+/*-------------Navbar---------------*/
+
+#head{
+    height: 80px;
+    max-width: 100%;
+}
+
+.logo{
+    padding: 20px;
+    margin-left: 50px;
+    float: left;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar{
+    background-color: #f9faff85;
+    margin-right: 50px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar ul{
+    list-style: none;
+    float: right;
+}
+
+.navbar ul li{
+    float: left;
+}
+
+.navbar li{ 
+    float: right;
+    padding: 20px;
+    list-style: none;
+}
+
+.navbar ul li a{ 
+   color: black;
+   display: block;
+   padding: 10px;
+   text-align: center;  
+}
+
+.navbar ul li a:hover{
+    border-bottom: solid 3px #00E2B7;
+    font-weight: bolder;
+    color: #00E2B7;
+}
+#current{
+    font-weight: bolder;
+    font-size: large;
+    padding: -2px;
+    color: #00E2B7;
+}
+
+/*-------------End Navbar---------------*/
+
+
+/*------------ Contents ------------------*/
+
+
+#content{
+    display: grid;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    
+}
+
+#drop-down{
+    border-bottom: #00E2B7 5px solid;
+    margin-bottom: 50px;
+    width: max-content;
+    display: flex;
+}
+
+#drop-down h2{
+    width: max-content;
+    margin-right: 20px;
+}
+
+#arrow{
+    margin-top: 10px;
+}
+
+#drop-down:hover{
+    color: #00E2B7;
+    cursor: pointer;
+}
+
+
+
+/*------------- Card --------------*/
+
+.weeks{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(50px, auto);    
+    grid-column-gap: 50px;
+}
+
+#week-1 #week2{
+    grid-row: 1;
+}
+
+
+
+.event-card{
+    width:300px;
+    height: 300px;
+    background-color: #F9FAFF;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    grid-row:2;
+}
+
+.event-title{
+    width: 96%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    /* align-items: flex-end; */
+    margin-top: 245px;
+}
+
+.event-card:hover{
+    cursor: pointer;  
+    filter: drop-shadow(0 0 0.20rem #00e2b9);
+}
+
+.event-title:hover{
+    cursor: pointer;
+    background-color: #00e2b9 ;
+    color: white;
+}
+
+#event-week-1-1{
+    background-image: url("./Images/Events/event-week-1-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#event-week-2-1{
+    background-image: url("./Images/Events/event-week-1-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#event-week-1-3{
+    background-image: url("./Images/Events/event-week-3-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*------------- End Card --------------*/
+
+
+
+/*------------ End Contents ------------------*/
+
+
+
+/*----------Footer------------*/
+#city{
+    display: grid;
+    justify-content: flex-end;
+    margin-left: auto;
+    
+    height: 85px;
+}
+
+#footer{
+    display: grid;
+    grid-template-rows: max-content;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    justify-items: center; 
+    padding-top: 30px;
+}
+
+
+.social{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 20px;
+    height: 50px;
+    justify-items: center;
+}
+
+.extra a{
+    color:rgba(255, 255, 255, 0.40);
+}
+
+.extra a:hover{
+    color:#00E2B7;
+}
+
+.copyright{
+    color:rgba(255, 255, 255, 0.40);
+}
+
+/*----------End Footer------------*/
